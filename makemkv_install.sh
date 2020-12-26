@@ -75,6 +75,8 @@ tar xzf ./makemkv-oss/${makemkv_oss_tarball} -C ./makemkv-oss
 echo '\n\nStarting install'
 sleep 3s
 cd ${makemkv_bin_makefile_location}
+mkdir ./tmp
+echo "accepted" > ./tmp/eula_accepted
 ./configure
 make
 make install
